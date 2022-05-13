@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+3b450dcb90f764297cc81f96ca9f6248 CMakeFiles/tinyutf8-populate
+8a572167ea1a081f0f509fb287f9a63c CMakeFiles/tinyutf8-populate-complete
+a1b29943c57af241d44a643a22ab973b tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-build
+1117a04bcb33afac9daa04b955275cb5 tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-configure
+0172661390e6d69ba46a3349d7ab5c6c tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-download
+8cce345989178516f9c915f3927bf1db tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-install
+c4e991278e0f2f295c906576a63cf960 tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-mkdir
+d2276edb15c0ae56a7116f5cd2efad72 tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-patch
+e965809187352a41339efb67fdfdd806 tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-test
+8b8e59426869a0c4b03d6f5ba3456ec7 tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-update

@@ -1,0 +1,131 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/oatpp-src/cmake/module-install.cmake",
+			"cmake-build-debug/_deps/oatpp-src/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 362,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/oatpp-1.3.0",
+			"paths" : 
+			[
+				"_deps/oatpp-build/src/liboatpp.a"
+			],
+			"targetId" : "oatpp::@7edc8ffaabe5654666e3",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/oatpp-1.3.0",
+			"paths" : 
+			[
+				"_deps/oatpp-build/src/liboatpp-test.a"
+			],
+			"targetId" : "oatpp-test::@7edc8ffaabe5654666e3",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/oatpp-1.3.0/oatpp",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/oatpp-src/cmake/../src/oatpp",
+				"cmake-build-debug/_deps/oatpp-src/cmake/../src/oatpp-test"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/oatpp-1.3.0",
+			"exportName" : "oatppTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "oatpp::@7edc8ffaabe5654666e3",
+					"index" : 1
+				},
+				{
+					"id" : "oatpp-test::@7edc8ffaabe5654666e3",
+					"index" : 2
+				}
+			],
+			"paths" : 
+			[
+				"_deps/oatpp-build/src/CMakeFiles/Export/lib/cmake/oatpp-1.3.0/oatppTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/oatpp-1.3.0",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/oatpp-build/src/oatppConfig.cmake",
+				"cmake-build-debug/_deps/oatpp-build/src/oatppConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/oatpp-build/src",
+		"source" : "cmake-build-debug/_deps/oatpp-src/src"
+	}
+}

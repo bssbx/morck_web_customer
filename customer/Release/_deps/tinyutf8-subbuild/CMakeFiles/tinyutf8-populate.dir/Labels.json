@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/CMakeFiles/tinyutf8-populate"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/CMakeFiles/tinyutf8-populate.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/CMakeFiles/tinyutf8-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-build.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-download.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-install.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-test.rule"
+		},
+		{
+			"file" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/tinyutf8-subbuild/tinyutf8-populate-prefix/src/tinyutf8-populate-stamp/tinyutf8-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tinyutf8-populate"
+		],
+		"name" : "tinyutf8-populate"
+	}
+}

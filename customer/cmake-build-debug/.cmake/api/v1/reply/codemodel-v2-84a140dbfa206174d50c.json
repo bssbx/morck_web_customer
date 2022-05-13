@@ -1,0 +1,155 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "_deps/oatpp-build",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.oatpp-build-Debug-54f3a7d6a61cf2e50bfd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/oatpp-src"
+				},
+				{
+					"build" : "_deps/oatpp-build/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.oatpp-build.src-Debug-f1112596affedddd52ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/oatpp-src/src",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				},
+				{
+					"build" : "_deps/oatpp-build/test",
+					"jsonFile" : "directory-_deps.oatpp-build.test-Debug-05c613f7b82fe7a0e115.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/oatpp-src/test",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "customer",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "oatpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "customer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-customer-Debug-c041cd5a1bbed361a40d.json",
+					"name" : "customer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "oatpp::@7edc8ffaabe5654666e3",
+					"jsonFile" : "target-oatpp-Debug-01d51552f22fb0c43c95.json",
+					"name" : "oatpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "oatpp-test::@7edc8ffaabe5654666e3",
+					"jsonFile" : "target-oatpp-test-Debug-ca399dc58a33a5a71bf2.json",
+					"name" : "oatpp-test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "oatppAllTests::@d9c723beaf013da4d523",
+					"jsonFile" : "target-oatppAllTests-Debug-895574bc7f05aafea778.json",
+					"name" : "oatppAllTests",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug",
+		"source" : "/Users/rufus/Documents/GitHub/morck_web_customer/customer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

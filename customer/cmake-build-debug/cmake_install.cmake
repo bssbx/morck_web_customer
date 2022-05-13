@@ -39,32 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/spdlog-build/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/oatpp-build/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/json-build/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/httplib-build/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/tinyutf8-build/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/_deps/fmt-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

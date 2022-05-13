@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/DuffsDevice/tiny-utf8/archive/v4.4.3.tar.gz'
-tag=''

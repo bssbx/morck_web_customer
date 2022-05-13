@@ -1,0 +1,14 @@
+# Target labels
+ spdlog-populate
+# Source files and their labels
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test.rule
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update.rule
