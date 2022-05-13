@@ -3,8 +3,6 @@
 
 #include "controller/MyController.hpp"
 #include "AppComponent.hpp"
-#include "dto/HelloDto.h"
-#include "dto/MessageDto.h"
 
 #include <oatpp/network/Server.hpp>
 
