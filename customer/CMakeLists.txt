@@ -10,8 +10,6 @@ add_executable(customer main.cpp
         dto/MyDTOs.hpp
         )
 
-set(SOURCE_FILES dto/MyDTOs.hpp)
-
 include(FetchContent)
 
 #FetchContent_Declare(Json URL https://github.com/nlohmann/json/releases/download/v3.10.5/json.tar.xz)
