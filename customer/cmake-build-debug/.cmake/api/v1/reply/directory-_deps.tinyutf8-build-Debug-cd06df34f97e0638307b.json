@@ -1,0 +1,84 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/tinyutf8-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 115,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "share/tinyutf8/cmake",
+			"exportName" : "tinyutf8_Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tinyutf8::@b1dfd83eb05dade602c1",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"_deps/tinyutf8-build/CMakeFiles/Export/share/tinyutf8/cmake/tinyutf8Targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/tinyutf8/cmake",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/tinyutf8-build/tinyutf8Config.cmake",
+				"cmake-build-debug/_deps/tinyutf8-build/tinyutf8ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"cmake-build-debug/_deps/tinyutf8-src/include/tinyutf8"
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/tinyutf8-build",
+		"source" : "cmake-build-debug/_deps/tinyutf8-src"
+	}
+}
