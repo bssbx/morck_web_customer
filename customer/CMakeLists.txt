@@ -13,12 +13,12 @@ add_library(${project_name}-lib
         src/dto/MyDTOs.hpp
         )
 
+target_include_directories(${project_name}-lib PUBLIC src)
+
 find_package(oatpp 1.3.0 REQUIRED)
 target_link_libraries(${project_name}-lib
         PUBLIC oatpp::oatpp
         )
-
-target_include_directories(${project_name}-lib PUBLIC src)
 
 set_target_properties(${project_name}-lib PROPERTIES
         CXX_STANDARD 11
