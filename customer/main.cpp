@@ -1,8 +1,7 @@
 #include <iostream>
 
-
-#include "controller/MyController.hpp"
-#include "AppComponent.hpp"
+#include "src/controller/MyController.hpp"
+#include "src/AppComponent.hpp"
 
 #include <oatpp/network/Server.hpp>
 

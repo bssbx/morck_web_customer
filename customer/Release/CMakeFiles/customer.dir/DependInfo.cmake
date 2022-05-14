@@ -8,14 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/rufus/Documents/GitHub/morck_web_customer/customer/controller/MyController.cpp" "CMakeFiles/customer.dir/controller/MyController.cpp.o" "gcc" "CMakeFiles/customer.dir/controller/MyController.cpp.o.d"
   "/Users/rufus/Documents/GitHub/morck_web_customer/customer/main.cpp" "CMakeFiles/customer.dir/main.cpp.o" "gcc" "CMakeFiles/customer.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/spdlog-build/CMakeFiles/spdlog.dir/DependInfo.cmake"
   "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/oatpp-build/src/CMakeFiles/oatpp.dir/DependInfo.cmake"
-  "/Users/rufus/Documents/GitHub/morck_web_customer/customer/Release/_deps/fmt-build/CMakeFiles/fmt.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
