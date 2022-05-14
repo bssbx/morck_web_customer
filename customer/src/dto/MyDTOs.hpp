@@ -19,7 +19,7 @@ class HelloDto : public oatpp::DTO {
   DTO_FIELD(String, userAgent, "user-agent");
   DTO_FIELD(String, message);
   DTO_FIELD(String, server);
-  
+
 };
 
 class MessageDto : public oatpp::DTO {

@@ -50,11 +50,20 @@ cmake_ninja_workdir = /Users/rufus/Documents/GitHub/morck_web_customer/customer/
 build cmake_object_order_depends_target_customer-lib: phony || CMakeFiles/customer-lib.dir
 
 build CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o: CXX_COMPILER__customer-lib_Debug /Users/rufus/Documents/GitHub/morck_web_customer/customer/src/controller/MyController.cpp || cmake_object_order_depends_target_customer-lib
+  DEFINES = -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=c++11
-  INCLUDES = -I/Users/rufus/Documents/GitHub/morck_web_customer/customer/src -isystem /usr/local/include/oatpp-1.3.0/oatpp
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11
+  INCLUDES = -I/Users/rufus/Documents/GitHub/morck_web_customer/customer/src -isystem /usr/local/include/oatpp-1.3.0/oatpp -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/customer-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/customer-lib.dir/src/controller
+
+build CMakeFiles/customer-lib.dir/src/db/DB.cpp.o: CXX_COMPILER__customer-lib_Debug /Users/rufus/Documents/GitHub/morck_web_customer/customer/src/db/DB.cpp || cmake_object_order_depends_target_customer-lib
+  DEFINES = -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/customer-lib.dir/src/db/DB.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11
+  INCLUDES = -I/Users/rufus/Documents/GitHub/morck_web_customer/customer/src -isystem /usr/local/include/oatpp-1.3.0/oatpp -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/customer-lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/customer-lib.dir/src/db
 
 
 # =============================================================================
@@ -64,7 +73,7 @@ build CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o: CXX_COMPILE
 #############################################
 # Link the static library libcustomer-lib.a
 
-build libcustomer-lib.a: CXX_STATIC_LIBRARY_LINKER__customer-lib_Debug CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o
+build libcustomer-lib.a: CXX_STATIC_LIBRARY_LINKER__customer-lib_Debug CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o CMakeFiles/customer-lib.dir/src/db/DB.cpp.o
   ARCH_FLAGS = -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/customer-lib.dir
@@ -74,37 +83,38 @@ build libcustomer-lib.a: CXX_STATIC_LIBRARY_LINKER__customer-lib_Debug CMakeFile
   TARGET_PDB = customer-lib.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target customer-exe
+# Object build statements for EXECUTABLE target customer
 
 
 #############################################
-# Order-only phony target for customer-exe
+# Order-only phony target for customer
 
-build cmake_object_order_depends_target_customer-exe: phony || cmake_object_order_depends_target_customer-lib
+build cmake_object_order_depends_target_customer: phony || cmake_object_order_depends_target_customer-lib
 
-build CMakeFiles/customer-exe.dir/main.cpp.o: CXX_COMPILER__customer-exe_Debug /Users/rufus/Documents/GitHub/morck_web_customer/customer/main.cpp || cmake_object_order_depends_target_customer-exe
-  DEP_FILE = CMakeFiles/customer-exe.dir/main.cpp.o.d
+build CMakeFiles/customer.dir/main.cpp.o: CXX_COMPILER__customer_Debug /Users/rufus/Documents/GitHub/morck_web_customer/customer/main.cpp || cmake_object_order_depends_target_customer
+  DEFINES = -DJSON_DIAGNOSTICS=0 -DJSON_USE_IMPLICIT_CONVERSIONS=1 -DSPDLOG_COMPILED_LIB
+  DEP_FILE = CMakeFiles/customer.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11
-  INCLUDES = -I/Users/rufus/Documents/GitHub/morck_web_customer/customer/src -isystem /usr/local/include/oatpp-1.3.0/oatpp
-  OBJECT_DIR = CMakeFiles/customer-exe.dir
-  OBJECT_FILE_DIR = CMakeFiles/customer-exe.dir
+  INCLUDES = -I/Users/rufus/Documents/GitHub/morck_web_customer/customer/src -isystem /usr/local/include/oatpp-1.3.0/oatpp -isystem /usr/local/include
+  OBJECT_DIR = CMakeFiles/customer.dir
+  OBJECT_FILE_DIR = CMakeFiles/customer.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target customer-exe
+# Link build statements for EXECUTABLE target customer
 
 
 #############################################
-# Link the executable customer-exe
+# Link the executable customer
 
-build customer-exe: CXX_EXECUTABLE_LINKER__customer-exe_Debug CMakeFiles/customer-exe.dir/main.cpp.o | libcustomer-lib.a /usr/local/lib/oatpp-1.3.0/liboatpp.a || libcustomer-lib.a
+build customer: CXX_EXECUTABLE_LINKER__customer_Debug CMakeFiles/customer.dir/main.cpp.o | libcustomer-lib.a /usr/local/lib/oatpp-1.3.0/liboatpp.a /usr/local/lib/libspdlog.a || libcustomer-lib.a
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6
-  LINK_LIBRARIES = libcustomer-lib.a  /usr/local/lib/oatpp-1.3.0/liboatpp.a
-  OBJECT_DIR = CMakeFiles/customer-exe.dir
+  LINK_LIBRARIES = libcustomer-lib.a  /usr/local/lib/oatpp-1.3.0/liboatpp.a  /usr/local/lib/libspdlog.a
+  OBJECT_DIR = CMakeFiles/customer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = customer-exe
-  TARGET_PDB = customer-exe.dbg
+  TARGET_FILE = customer
+  TARGET_PDB = customer.dbg
 
 
 #############################################
@@ -142,7 +152,7 @@ build customer-lib: phony libcustomer-lib.a
 #############################################
 # Folder: /Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug
 
-build all: phony libcustomer-lib.a customer-exe
+build all: phony libcustomer-lib.a customer
 
 # =============================================================================
 # Built-in targets
@@ -151,14 +161,14 @@ build all: phony libcustomer-lib.a customer-exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfigVersion.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-debug.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-noconfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfigVersion.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-debug.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-noconfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets.cmake /usr/local/lib/cmake/spdlog/spdlogConfig.cmake /usr/local/lib/cmake/spdlog/spdlogConfigTargets-release.cmake /usr/local/lib/cmake/spdlog/spdlogConfigTargets.cmake /usr/local/lib/cmake/spdlog/spdlogConfigVersion.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfigVersion.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-debug.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-noconfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake /usr/local/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppConfigVersion.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-debug.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets-noconfig.cmake /usr/local/lib/cmake/oatpp-1.3.0/oatppTargets.cmake /usr/local/lib/cmake/spdlog/spdlogConfig.cmake /usr/local/lib/cmake/spdlog/spdlogConfigTargets-release.cmake /usr/local/lib/cmake/spdlog/spdlogConfigTargets.cmake /usr/local/lib/cmake/spdlog/spdlogConfigVersion.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -5,12 +5,16 @@ set(project_name customer)
 project(${project_name})
 
 set(CMAKE_CXX_STANDARD 11)
+set(CXX_EXTENSIONS OFF)
+set(CXX_STANDARD_REQUIRED ON)
 
 add_library(${project_name}-lib
         src/AppComponent.hpp
         src/controller/MyController.cpp
         src/controller/MyController.hpp
         src/dto/MyDTOs.hpp
+        src/db/DB.cpp
+        src/db/DB.h
         )
 
 target_include_directories(${project_name}-lib PUBLIC src)
@@ -20,14 +24,30 @@ target_link_libraries(${project_name}-lib
         PUBLIC oatpp::oatpp
         )
 
-set_target_properties(${project_name}-lib PROPERTIES
-        CXX_STANDARD 11
-        CXX_EXTENSIONS OFF
-        CXX_STANDARD_REQUIRED ON
-        )
+#set_target_properties(${project_name}-lib PROPERTIES
+#        CXX_STANDARD 11
+#        CXX_EXTENSIONS OFF
+#        CXX_STANDARD_REQUIRED ON
+#        )
 
-add_executable(${project_name}-exe
+find_package(nlohmann_json 3.2.0 REQUIRED)
+target_link_libraries(${project_name}-lib
+        PUBLIC nlohmann_json::nlohmann_json
+        )
+find_package(spdlog REQUIRED)
+target_link_libraries(${project_name}-lib
+        PUBLIC spdlog::spdlog
+        )
+#target_include_directories(${project_name} PRIVATE ${nlohmann_json_INCLUDE_DIR})
+#target_link_libraries(${project_name}
+#        ${nlohmann_json_LIBRARIES})
+
+#find_package(Boost 1.66.0 REQUIRED COMPONENTS system program_options)
+#target_include_directories(${project_name} PRIVATE ${Boost_INCLUDE_DIR})
+#target_link_libraries(${project_name} ${Boost_LIBRARIES})
+
+add_executable(${project_name}
         main.cpp)
 
-target_link_libraries(${project_name}-exe ${project_name}-lib)
-add_dependencies(${project_name}-exe ${project_name}-lib)
+target_link_libraries(${project_name} ${project_name}-lib)
+add_dependencies(${project_name} ${project_name}-lib)

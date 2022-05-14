@@ -8,6 +8,8 @@
 
 #include "dto/MyDTOs.hpp"
 
+#include <nlohmann/json.hpp>
+
 #include OATPP_CODEGEN_BEGIN(ApiController) //<-- Begin codegen
 
 /**
@@ -51,7 +53,7 @@ public:
     }
     
   };
-  
+
   /**
    *  Echo body endpoint Coroutine. Mapped to "/body/string".
    *  Returns body received in the request

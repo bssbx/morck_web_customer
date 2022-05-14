@@ -7,6 +7,9 @@
 
 #include <iostream>
 
+#include <spdlog/spdlog.h>
+#include <nlohmann/json.hpp>
+
 void run() {
 
     AppComponent components; // Create scope Environment components
