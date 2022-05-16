@@ -38,9 +38,18 @@ find_package(spdlog REQUIRED)
 target_link_libraries(${project_name}-lib
         PUBLIC spdlog::spdlog
         )
-#target_include_directories(${project_name} PRIVATE ${nlohmann_json_INCLUDE_DIR})
-#target_link_libraries(${project_name}
-#        ${nlohmann_json_LIBRARIES})
+
+set(WORKFLOW_LIB workflow pthread OpenSSL::SSL OpenSSL::Crypto)
+
+find_package(OpenSSL REQUIRED)
+find_package(workflow REQUIRED)
+#find_package(workflow REQUIRED CONFIG HINTS ..)
+include_directories(${OPENSSL_INCLUDE_DIR} ${WORKFLOW_INCLUDE_DIR})
+link_directories(${WORKFLOW_LIB_DIR})
+
+target_link_libraries(${project_name}-lib
+        PUBLIC workflow
+        )
 
 #find_package(Boost 1.66.0 REQUIRED COMPONENTS system program_options)
 #target_include_directories(${project_name} PRIVATE ${Boost_INCLUDE_DIR})
