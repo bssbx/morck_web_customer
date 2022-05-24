@@ -1,7 +1,6 @@
 # ninja log v5
-5	2796	1652681213504780152	CMakeFiles/customer.dir/main.cpp.o	bbfdf33a9f4953e5
-4	2033	1652681212748883886	CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o	7d02d45a871ddc99
-4	114	1652681354931828246	customer	1968b07dfb8c6912
-2033	2065	1652681212796453000	libcustomer-lib.a	c226a2957584e972
-5	73	1652681210801984527	CMakeFiles/customer-lib.dir/src/db/DB.cpp.o	54de3f9169049fcc
-1	87	1652681581024961330	build.ninja	d9d9e34f16411286
+1	35	1652684654035825282	CMakeFiles/customer-lib.dir/src/db/DB.cpp.o	54de3f9169049fcc
+1	1734	1652684655726856818	CMakeFiles/customer.dir/main.cpp.o	bbfdf33a9f4953e5
+1	1996	1652684655988307541	CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o	7d02d45a871ddc99
+1996	2027	1652684656030835000	libcustomer-lib.a	c226a2957584e972
+2027	2084	1652684656085315968	customer	1968b07dfb8c6912

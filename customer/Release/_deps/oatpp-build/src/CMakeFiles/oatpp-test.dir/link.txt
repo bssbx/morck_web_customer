@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc liboatpp-test.a "CMakeFiles/oatpp-test.dir/oatpp-test/Checker.cpp.o" "CMakeFiles/oatpp-test.dir/oatpp-test/UnitTest.cpp.o"
-/Library/Developer/CommandLineTools/usr/bin/ranlib liboatpp-test.a

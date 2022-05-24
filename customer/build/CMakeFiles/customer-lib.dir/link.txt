@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libcustomer-lib.a "CMakeFiles/customer-lib.dir/src/controller/MyController.cpp.o" "CMakeFiles/customer-lib.dir/src/db/DB.cpp.o"
+/Library/Developer/CommandLineTools/usr/bin/ranlib libcustomer-lib.a

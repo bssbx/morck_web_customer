@@ -1,4 +1,9 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/rufus/Documents/GitHub/morck_web_customer/customer -B /Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug
+CMake Error at CMakeLists.txt:12 (target_link_libraries):
+  Cannot specify link libraries for target "customer" which is not built by
+  this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/rufus/Documents/GitHub/morck_web_customer/customer/cmake-build-debug/CMakeFiles/CMakeError.log".

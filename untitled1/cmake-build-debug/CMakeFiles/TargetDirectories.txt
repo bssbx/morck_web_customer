@@ -1,0 +1,5 @@
+/Users/rufus/Documents/GitHub/morck_web_customer/untitled1/cmake-build-debug/CMakeFiles/untitled1.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/untitled1/cmake-build-debug/CMakeFiles/package.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/untitled1/cmake-build-debug/CMakeFiles/package_source.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/untitled1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/untitled1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

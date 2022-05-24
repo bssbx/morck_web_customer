@@ -1,0 +1,4 @@
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/build/CMakeFiles/customer-lib.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/build/CMakeFiles/customer.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/build/CMakeFiles/edit_cache.dir
+/Users/rufus/Documents/GitHub/morck_web_customer/customer/build/CMakeFiles/rebuild_cache.dir
